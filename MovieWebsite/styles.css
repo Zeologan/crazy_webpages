@@ -215,3 +215,56 @@ nav a:hover {
     border-radius: 50px;
     mix-blend-mode: lighten;
 }
+
+.thumbnail .item .thum-content{
+    bottom: 10px;
+    left: 40px;
+    right: 10px;
+}
+
+/* Arrow  */
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 42%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(211,211,211,0.881);
+    color: rgba(0, 0, 0, 0.749);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrows button:hover{
+    background-color: lightgray;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.612);
+}
+
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+
+.carousel .list .item:nth-child(1) .content{
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to{
+        filter: blur(0);
+        opacity: 1;
+    }
+}
