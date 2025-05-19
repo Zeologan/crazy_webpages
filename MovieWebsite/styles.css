@@ -268,3 +268,10 @@ nav a:hover {
         opacity: 1;
     }
 }
+
+
+/* Create Animation when next click */
+
+.carousel .next .list .item:nth-child(){
+    
+}
