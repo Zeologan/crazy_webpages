@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.374);
+    backdrop-filter: blur(10px);
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box img {
+    width: 20px;
+    background-color: lightgray;
+    padding: 5px 10px;
+    margin-right: -1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-box input {
+    padding: 7.5px 30px;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 10px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.699);
+}
+
+nav a:hover {
+    color: #ff0040;
+}
+
+/* Carousel  */
+
+.carousel {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    margin-top: -70px;
+}
+
+.carousel .list .item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    inset: 0 0 0 0;
+}
+
+.carousel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .list .item .content {
+    position: absolute;
+    top: 10%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.598);
+}
+
+.content h1 {
+    font-size: 65px;
+    font-weight: bold;
+    text-wrap: nowrap;
+    margin-bottom: 0;
+}
+
+.details {
+    display: flex;
+    text-wrap: nowrap;
+    margin-bottom: -20px;
+}
+
+.details p {
+    border-right: 2px solid white;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffcc00;
+    padding: 0 10px;
+}
+
+.details p:last-child {
+    border: none;
+}
+
+.content h4 {
+    max-width: 400px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    /* margin: 40px 0; */
+}
+
+.carousel .button {
+    display: flex;
+}
+
+.download-btn {
+    width: 150px;
+    padding: 12px 0;
+    font-weight: bold;
+    border: none;
+    background-color: #ffcc00;
+    color: black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.566);
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.trailer-btn {
+    width: 150px;
+    padding: 12px 0;
+    font-weight: bold;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.566);
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    opacity: 0.7;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.589);
+}
+
+.vid-box{
+    border: 5px solid #ffcc00;
+    width: 250px;
+    height: 140px;
+    border-radius: 20px;
+    margin-top: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.685);
+}
+
+.vid-box video{
+    width: 250px;
+    height: 140px;
+}
+
+/* Thumbnail  */
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    mix-blend-mode: lighten;
+}
